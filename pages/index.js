@@ -1,4 +1,5 @@
 import Head from '../pages/Head'
+import Link from 'next/link'
 
 
 export default function Home() {
@@ -31,8 +32,9 @@ export default function Home() {
                 </div>
                 <a href="#!" >Forgot your password?</a>
               </div>
-                  <button type="submit" class="btn btn-primary btn-lg btn-block w-100 mt-3">Sign in</button>
-                  
+              <Link href='/Home'>
+                  <a className="btn btn-primary btn-lg btn-block w-100 mt-3">Sign in</a>
+                  </Link>
             </form>
             
             </div>
