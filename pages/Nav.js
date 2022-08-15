@@ -6,9 +6,10 @@ export default function Nav(){
             <nav className="navbar navbar-expand-lg navbar-light bg-dark">
                 <div className="container">
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <a className="navbar-brand mt-2 mt-lg-0" href="#">
-        <img src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"/>
-      </a>
+                    <a className="navbar-brand" href="#">
+    <div className={Styles.image_test}><img src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" width="50" height="30" class="d-inline-block align-top " alt=""/>
+    <span className='text-light'>workflow</span></div>
+  </a>
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
           <a className="nav-link text-light" href="#">Dashboard</a>
