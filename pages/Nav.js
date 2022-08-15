@@ -5,21 +5,9 @@ export default function Nav(){
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-dark">
                 <div className="container">
-    <button
-      className="navbar-toggler"
-      type="button"
-      data-mdb-toggle="collapse"
-      data-mdb-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <i className="fas fa-bars"></i>
-    </button>
-
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <a className="navbar-brand mt-2 mt-lg-0" href="#">
-        <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" className='Styles.image_test'/>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <a className="navbar-brand mt-2 mt-lg-0" href="#">
+        <img src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"/>
       </a>
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
@@ -100,6 +88,7 @@ export default function Nav(){
     </div>
   </div>
 </nav>
+
 
         </div>
         )

@@ -8,9 +8,9 @@ export default function Home() {
         <div className='container'>
           <Head/>
             <img
-                 className="rounded mx-auto d-block w-25 p-3 mt-5"
+                 className="rounded mx-auto d-block p-3 mt-5"
                   src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                   alt="Workflow"/>
+                   alt="Workflow" width="100"/>
                     <h2 className="mb-5 text-center font-extrabold text-gray-900">Sign in to your account</h2>
         
                     <form className='form-inline w-50 mx-auto'>
@@ -18,10 +18,11 @@ export default function Home() {
                         <input id="email-address" name="email" type="email" placeholder="Email address"  className="form-control " 
                           aria-label="Large"></input>
                           </div>
+                          <label></label>
                               <div className="form-group">
                                  <input id="password" name="password" type="password" placeholder="Password"  className="form-control col-sm-10" 
                                    aria-label="Large"></input>
-             </div>
+                                   </div>
     
              <div className="d-flex justify-content-between align-items-center">
                 <div className="form-check mb-0">
@@ -30,7 +31,6 @@ export default function Home() {
                   Check me out
                   </label>
                 </div>
-                <a href="#!" >Forgot your password?</a>
               </div>
               <Link href='/Home'>
                   <a className="btn btn-primary btn-lg btn-block w-100 mt-3">Sign in</a>
