@@ -18,7 +18,7 @@ export default function Home() {
                         <input id="email-address" name="email" type="email" placeholder="Email address"  className="form-control " 
                           aria-label="Large"></input>
                           </div>
-                          <label></label>
+                          <label/>
                               <div className="form-group">
                                  <input id="password" name="password" type="password" placeholder="Password"  className="form-control col-sm-10" 
                                    aria-label="Large"></input>
@@ -31,6 +31,7 @@ export default function Home() {
                   Check me out
                   </label>
                 </div>
+                <a href="#!" >Forgot your password?</a>
               </div>
               <Link href='/Home'>
                   <a className="btn btn-primary btn-lg btn-block w-100 mt-3">Sign in</a>
