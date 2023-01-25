@@ -1,8 +1,32 @@
 import Head from '../pages/Head'
 import Link from 'next/link'
 
+export const getStaticPaths = async() => {
+   const res = await fetch('https://randomuser.me/api/');
+   const data = await res.json();
 
-export default function Home() {
+   const paths = data.map(user_data => {
+     return{
+       params :{ usr : user_data.login.toString()}
+     }
+   })
+
+   return{
+      paths,
+      fallback: false
+    }
+  }
+  export const getStaticProps = async (context) => {
+    const id = context.params.usr;
+    const res = await fetch('https://randomuser.me/api/' + id);
+    const data = await res.json();
+    return{
+      props: {user_data: data}
+    }
+  }
+
+
+export default function Home({user_data}) {
   
   return (
         <div className='container'>
@@ -33,8 +57,8 @@ export default function Home() {
                 </div>
                 <a href="#!" >Forgot your password?</a>
               </div>
-              <Link href='/Home'>
-                  <a className="btn btn-primary btn-lg btn-block w-100 mt-3">Sign in</a>
+              <Link href={user_data}>
+                  <button className="btn btn-primary btn-lg btn-block w-100 mt-3" >Sign in</button>
                   </Link>
             </form>
             
